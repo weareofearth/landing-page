@@ -59,7 +59,6 @@ body
 .top
 {
   padding-top: 400px;
-  padding-bottom: 200px;
   background-color: #ffffff;
   color: black;
 }
@@ -170,10 +169,6 @@ img
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="img_nature_wide.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
   <img src="img_snow_wide.jpg" style="width:100%">
 </div>
 
@@ -187,9 +182,7 @@ img
 <div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
-  <span class="dot"></span> 
 </div>
-
 
 <!-- TEXT -->
 <div class="top">
@@ -225,7 +218,7 @@ img
   </CENTER>
 </div>
 
-  <script>
+<script>
 let slideIndex = 0;
 showSlides();
 
@@ -238,7 +231,11 @@ function showSlides()
     slides[i].style.display = "none";  
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) 
+  {
+	  slideIndex = 1
+  }    
+	
   for (i = 0; i < dots.length; i++) 
   {
     dots[i].className = dots[i].className.replace(" active", "");
