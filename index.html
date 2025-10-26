@@ -83,6 +83,13 @@ body
   background-color: #ffffff;
   color: black;
 }
+
+.responsive-image {
+  width: 50%;
+  height: auto;
+  min-width: 300px; /* keeps it from shrinking too small */
+  max-width: 100%;  /* ensures it doesn't overflow the screen */
+}
   
 .footer 
 {
@@ -104,7 +111,6 @@ img
 	vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container 
 {
   max-width: 100%;
@@ -112,7 +118,6 @@ img
   margin: auto;
 }
 
-/* The dots/bullets/indicators */
 .dot 
 {
   height: 15px;
@@ -158,6 +163,7 @@ img
 }
 </style>
 </head>
+	
 <body>
 
 
@@ -175,7 +181,7 @@ img
 
 
 	
-<!-- slider -->
+<!-- SLIDER -->
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -206,14 +212,14 @@ img
 <div class="top">
   <div id="about">
   <CENTER>
-  <h2>"WE ARE an indie-game studio from Miami-Dade, crafting retro futuristic sci-fi stories and experiences"</h2>  
+  <h2>"WE ARE an indie-game studio from Miami-Dade, <br> crafting retro futuristic sci-fi experiences"</h2>  
 	<br>
 	  <br>
 	    <br>
 	      <br>
-	<img src="39031350_2603938176304390_6018420402097750016_n.jpg" alt="Oculus Launch Pad" width=50% height=50%>
+	<img src="39031350_2603938176304390_6018420402097750016_n.jpg" alt="Oculus Launch Pad" width=50% height=50% class="responsive-image">
 	<br>
-	<img src="26814029_144600776256317_7980295900234776576_n.jpg"  alt="Oculus Start m" width=25% height=25%>
+	<img src="26814029_144600776256317_7980295900234776576_n.jpg"  alt="Meta Horizon Start" width=25% height=25% class="responsive-image">
 	<br>
 	<p> </p>
 	<br>
@@ -247,6 +253,7 @@ img
 -->
 
 	
+	
 <!-- BOTTOM -->
 <div class="footer">
   <CENTER>
@@ -254,6 +261,7 @@ img
   </CENTER>
 </div>
 
+<!-- JS -->
 <script>
 let slideIndex = 0;
 showSlides();
