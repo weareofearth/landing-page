@@ -19,6 +19,7 @@ body {
   overflow: hidden;
   background-color: #000000;
   padding: 18px 48px;
+  position: relative;
 }
 
 .header a {
@@ -51,10 +52,10 @@ body {
   float: right;
 }
 
-/* --- HAMBURGER MENU BUTTON (hidden by default) --- */
+/* --- HAMBURGER MENU BUTTON --- */
 .icon {
   display: none;
-  font-size: 24px;
+  font-size: 26px;
   color: white;
   cursor: pointer;
 }
@@ -125,12 +126,17 @@ img {
   max-width: 100%;
 }
 
+/* --- MOBILE LAYOUT --- */
 @media screen and (max-width: 600px) {
-  /* Stack links vertically on mobile */
+  .header {
+    text-align: center;
+    padding: 18px;
+  }
+
   .header a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
   .header-right {
@@ -140,8 +146,9 @@ img {
   }
 
   .icon {
-    display: block;
-    float: right;
+    display: inline-block;
+    float: none;
+    margin: 0 auto;
   }
 
   .responsive-image {
@@ -207,7 +214,7 @@ img {
   <p>"wildly entertaining adult retro enthusiasts" © 2021</p>
 </div>
 
-<!-- JS -->
+<!-- JAVASCRIPT -->
 <script>
 function toggleMenu() {
   const nav = document.getElementById("nav-links");
